@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-
-
-
-const Card = () => {
-  return <div>Hola, soy una tarjeta</div>;
+const Card = ({ artist, song }) => {
+  return (
+    <div className="card">
+      <h2>{artist}</h2>
+      <p>{song}</p>
+    </div>
+  );
 };
-
 
 export default Card;
